@@ -1,0 +1,188 @@
+/* goliath. - typo-template by emanuel kluge (http://www.emanuel-kluge.de/) */
+
+
+/* CSS-RESET by Eric Meyer
+===========================================================*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, input, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+
+/* GENERAL
+===========================================================*/
+
+html {
+	height: 100%;
+	overflow-y: scroll;
+}
+
+body {
+	background-color: #FFF;
+	/* font: normal 16px Helvetica, Verdana; */
+	/* font: normal 110% Garamond, sans-serif; */
+	font: normal 110% Palatino, serif; 
+	line-height: 1.5em;
+	color: #666;
+	/* text-align: center; */
+	margin-left: 0;
+	margin-right: auto;
+	padding-bottom: 4em;
+	width: 48em; 
+}
+
+#nav {
+	font: normal 110% Garamond, sans-serif;
+	padding-left: 1em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	margin-top: 5.5em;
+	width: 6em;
+	float: left;
+	font-size: 120%;
+	line-height: 1.5em;
+	background: #eee;
+}
+
+#nav a:link {
+	color: #5B0;
+	text-decoration: none;
+}
+
+#nav a:visited {
+	color: #5B0;
+	text-decoration: none;
+}
+
+#content {
+	margin-left: 1em;
+	width: 38em;
+	float: left;
+}
+
+#prevnext {
+	font: normal 110% Garamond, sans-serif;
+	margin-top: 1em;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+a:link {
+	color: #285800;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #666;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #285800;
+	text-decoration: underline;
+}
+
+a:active {
+	color: #06C;
+	text-decoration: none;
+}
+
+h1 {
+	font: normal 250% Palatino, serif; 
+	padding-top: 1em;
+	padding-bottom: 0.5em;
+}
+
+h2 {
+	font-size: 200%;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+h3 {
+	font-weight: normal;
+	padding-top: 1em;
+	color: #6C0;
+}
+
+pre {
+	padding: 1em;
+	font-family: courier;
+	text-align: left;
+}
+
+textarea {
+	font-size: 100%;
+	display: inline;
+	background-color: #FFF;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #666; 
+	color: #666;
+}
+
+input {
+	font-size: 100%;
+	background-color: #FFF;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #666; 
+}
+
+table {
+	border-spacing: 0px;
+	border-collapse: collapse;
+	margin-bottom: 1em;
+}
+
+th {
+	padding-right: 1em;
+	padding-bottom: 1em;
+}
+
+td {
+	padding-right: 1em;
+}
+
+
+.button {
+	color: #6C0;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #6C0;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+
+.filtered {
+	font-size: 110%;
+	text-align: left;
+	line-height: 1.4em;
+}
+
+.unfiltered {
+	line-height: 1.3em;
+}
+
+.comments {
+	font-size: 80%;
+}

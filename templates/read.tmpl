@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/static/stylesheet.css" type="text/css"/>
+        <title>Bread</title>
+    </head>
+    <body>
+	<div id="nav">
+        <p><a href="/">Index</a>
+        <p><a href="/haveread">Read</a>
+        <p><a href="/profile">Profile</a>
+	</div>
+	<div id="content">
+        <h1><span class="light">B</span>read</h1>
+        <table>
+        {{ range $.Unfiltered }}
+        <tr class="unfiltered">
+          <td><a href="/readagain?id={{.Id}}">{{ .Rss.Title }}</a></td>
+          <td class="comments"><a href="/comments?id={{.Id}}">comments</a></td>
+        </tr>
+        {{ end }}
+        </table>
+        <div id="prevnext"><p>
+        {{ if $.HavePrevious }}
+        <a href="/prev?id={{$.Previous}}">Previous</a>&nbsp;
+        {{ end }}
+        {{ if $.HaveNext }}
+        <a href="/next?id={{$.Next}}">Next</a>
+        {{ end }}
+        </div>
+	</div>
+    </body>
+</html>
+ 

@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/static/stylesheet.css" type="text/css"/>
+        <title>Bread</title>
+    </head>
+    <body>
+	<div id="nav">
+        <p><a href="/">Index</a>
+        <p><a href="/haveread">Read</a>
+        <p><a href="/profile">Profile</a>
+	</div>
+	<div id="content">
+        <h1>Bread</h1>
+        <table>
+            <tr>
+                <th>Interesting Words</th><th>Count</th>
+            </tr>
+            {{ range $.Interesting }}
+            <tr>
+                <td>{{ .Word }}</td><td>{{ .Count }}</td>
+            </tr>
+            {{ end }}
+        </table>
+        <table>
+            <tr>
+                <th>Uninteresting Words</th><th>Count</th>
+            </tr>
+            {{ range $.Uninteresting }}
+            <tr>
+                <td>{{ .Word }}</td><td>{{ .Count }}</td>
+            </tr>
+            {{ end }}
+        </table>
+        </div>
+	</div>
+    </body>
+</html>
+ 
